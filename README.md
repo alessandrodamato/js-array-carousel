@@ -18,7 +18,7 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 
 ## Svolgimento
 1. Creare un'array con dentro il percorso delle immagini
-2. Tramite un ciclo *for* inserire le immagini dinamicamente e concatenarle con un template literal all'HTML
-3. Creare un counter
-4. Importare i bottoni a cui dare al click la funzione di counter ++/-- per scorrere tra le foto
-5. Gestire la visibilità delle immagini non selezionate tramite la classe hide
+2. Creare un counter
+3. Tramite un ciclo *for* inserire le immagini dinamicamente e concatenarle con un template literal all'HTML
+4. Gestire la visibilità delle immagini non selezionate tramite la classe hide
+5. Importare i bottoni a cui dare al click la funzione di counter ++/-- per scorrere tra le foto

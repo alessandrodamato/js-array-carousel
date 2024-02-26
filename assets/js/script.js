@@ -34,6 +34,7 @@ imgThumbnail[counter].classList.add('border')
 const topButton = document.querySelector('.btn-top');
 
 topButton.addEventListener('click', function(){
+
   if (counter === 0) {
     imgCollection[counter].classList.add('hide');
     coverCollection[counter].classList.add('dark')
@@ -51,12 +52,14 @@ topButton.addEventListener('click', function(){
     coverCollection[counter].classList.remove('dark')
     imgThumbnail[counter].classList.add('border')
   }
+
 })
 
 // bottone DOWN
 const bottomButton = document.querySelector('.btn-bottom');
 
 bottomButton.addEventListener('click', function(){
+  
   if (counter === (images.length - 1)) {
     imgCollection[counter].classList.add('hide');
     coverCollection[counter].classList.add('dark')
@@ -74,4 +77,5 @@ bottomButton.addEventListener('click', function(){
     coverCollection[counter].classList.remove('dark')
     imgThumbnail[counter].classList.add('border')
   }
+
 })

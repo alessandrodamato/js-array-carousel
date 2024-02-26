@@ -22,16 +22,28 @@ imgCollection[counter].classList.remove('hide');
 const topButton = document.querySelector('.btn-top');
 
 topButton.addEventListener('click', function(){
-  imgCollection[counter].classList.add('hide');
-  counter--;
-  imgCollection[counter].classList.remove('hide');
+  if (counter === 0) {
+    imgCollection[counter].classList.add('hide');
+    counter = images.length - 1;
+    imgCollection[counter].classList.remove('hide');
+  } else {
+    imgCollection[counter].classList.add('hide');
+    counter--;
+    imgCollection[counter].classList.remove('hide');
+  }
 })
 
 // bottone DOWN
 const bottomButton = document.querySelector('.btn-bottom');
 
 bottomButton.addEventListener('click', function(){
-  imgCollection[counter].classList.add('hide');
-  counter++;
-  imgCollection[counter].classList.remove('hide');
+  if (counter === (images.length - 1)) {
+    imgCollection[counter].classList.add('hide');
+    counter = 0;
+    imgCollection[counter].classList.remove('hide');
+  } else {
+    imgCollection[counter].classList.add('hide');
+    counter++;
+    imgCollection[counter].classList.remove('hide');
+  }
 })

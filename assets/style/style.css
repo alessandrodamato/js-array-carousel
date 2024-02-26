@@ -61,6 +61,7 @@ img{
   line-height: 30px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .4);
+  background-size: cover;
 }
 
 .btn:hover{
@@ -70,10 +71,12 @@ img{
 
 .btn-top{
   top: 10px;
+  background-image: url(../img/arrowup.png);
 }
 
 .btn-bottom{
   bottom: 10px;
+  background-image: url(../img/arrowdown.png);
 }
 
 .thumbnails{
